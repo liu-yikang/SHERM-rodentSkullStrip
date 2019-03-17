@@ -1,1 +1,1 @@
-# SHape descriptor selected Extremal regions after Morphologically filtering (SHERM)
+# SHape descriptor selected Extremal Regions after Morphologically filtering (SHERM)
