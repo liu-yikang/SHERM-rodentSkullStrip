@@ -75,7 +75,7 @@ for i_channel = 1:n_channel
 end
 img_pyr = uint8(img_pyr*255);
 
-% attend to each MSER from each channel
+% get MSERs from each channel
 max_vol = brain_vol_range(2);
 min_vol = brain_vol_range(1);
 masks = cell(n_channel,1);
@@ -99,6 +99,7 @@ parfor i_channel = 1:n_channel
     masks{i_channel} = masks1;
 end
 
+% attend to each MSER from each channel
 desc_dist = zeros(n_channel, 50);
 desc = zeros(n_channel,50,length(desc_tmp));
 se = return3dStrel(dx*2,dx,dy,dz);
