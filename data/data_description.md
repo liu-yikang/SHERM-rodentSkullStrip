@@ -1,4 +1,12 @@
-All images have been intensity normalized by N3 (https://surfer.nmr.mgh.harvard.edu/fswiki/nu_correct). 
+# Data Description #
+
+```bash
+├── img (test images)
+├── brain_mask_ground_truth (ground truth brain masks)
+├── brain_mask_autoext (results from SHERM)
+```
+
+All test images have been intensity normalized by N3 (https://surfer.nmr.mgh.harvard.edu/fswiki/nu_correct). 
 
 **T1-weighted images of Long-Evans rats** 
 
