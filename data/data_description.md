@@ -1,7 +1,7 @@
 # Data Description #
 
 ```bash
-├── img (test images)
+├── img_N3_intensity_normalized (test images)
 ├── brain_mask_ground_truth (ground truth brain masks)
 ├── brain_mask_autoext (results from SHERM)
 ```
