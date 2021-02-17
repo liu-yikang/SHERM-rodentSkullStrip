@@ -39,7 +39,8 @@ else
         open_rad,close_rad,animal);
 end
 
-[ids_chan, ids_mser] = find(desc_dist >0 & desc_dist < (min(desc_dist(desc_dist>0)) + 0.05*sum(abs(desc_tmp))));
+desc_dist_min = min(desc_dist(desc_dist>0))
+[ids_chan, ids_mser] = find(desc_dist >0 & desc_dist < (desc_dist_min[0] + 0.05*sum(abs(desc_tmp))));
 mask = zeros(size(masks{1}(:,:,:,1)));
 for i_candidate = 1:length(ids_chan)
     mask = mask + masks{ids_chan(i_candidate)}(:,:,:,ids_mser(i_candidate));
