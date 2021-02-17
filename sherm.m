@@ -40,7 +40,7 @@ else
 end
 
 desc_dist_min = min(desc_dist(desc_dist>0))
-[ids_chan, ids_mser] = find(desc_dist >0 & desc_dist < (desc_dist_min[0] + 0.05*sum(abs(desc_tmp))));
+[ids_chan, ids_mser] = find(desc_dist >0 & desc_dist < (desc_dist_min[1] + 0.05*sum(abs(desc_tmp))));
 mask = zeros(size(masks{1}(:,:,:,1)));
 for i_candidate = 1:length(ids_chan)
     mask = mask + masks{ids_chan(i_candidate)}(:,:,:,ids_mser(i_candidate));
